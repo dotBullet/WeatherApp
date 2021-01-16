@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="496.0" y="0.0">ro.mta.se.lab.model.WeatherModel</node>
+    <node x="243.0" y="352.0">ro.mta.se.lab.controller.ReadConfigController</node>
+    <node x="212.99999999999994" y="0.0">ro.mta.se.lab.model.CityModel</node>
+    <node x="137.3981481481481" y="126.0">ro.mta.se.lab.model.CountryModel</node>
+    <node x="183.72777777777776" y="532.0">ro.mta.se.lab.MainApp</node>
+    <node x="0.0" y="252.0">ro.mta.se.lab.controller.MainViewController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ro.mta.se.lab.MainApp" target="ro.mta.se.lab.model.CountryModel">
+      <point x="0.0" y="-15.0" />
+      <point x="235.72777777777776" y="507.0" />
+      <point x="232.5" y="507.0" />
+      <point x="232.5" y="227.0" />
+      <point x="218.39814814814815" y="227.0" />
+      <point x="2.8421709430404007E-14" y="38.0" />
+    </edge>
+    <edge source="ro.mta.se.lab.model.CountryModel" target="ro.mta.se.lab.model.CityModel">
+      <point x="40.49999999999997" y="-38.0" />
+      <point x="258.8981481481481" y="106.0" />
+      <point x="272.99999999999994" y="106.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="ro.mta.se.lab.controller.MainViewController" target="ro.mta.se.lab.model.CountryModel">
+      <point x="74.0" y="-115.0" />
+      <point x="-32.400000000000006" y="38.0" />
+    </edge>
+    <edge source="ro.mta.se.lab.controller.ReadConfigController" target="ro.mta.se.lab.model.CityModel">
+      <point x="26.0" y="-15.0" />
+      <point x="373.0" y="227.0" />
+      <point x="390.3296296296296" y="227.0" />
+      <point x="390.3296296296296" y="106.0" />
+      <point x="296.99999999999994" y="106.0" />
+      <point x="24.0" y="38.0" />
+    </edge>
+    <edge source="ro.mta.se.lab.MainApp" target="ro.mta.se.lab.controller.ReadConfigController">
+      <point x="34.66666666666666" y="-15.0" />
+      <point x="270.3944444444444" y="507.0" />
+      <point x="347.0" y="507.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="ro.mta.se.lab.controller.ReadConfigController" target="ro.mta.se.lab.model.CountryModel">
+      <point x="-26.0" y="-15.0" />
+      <point x="321.0" y="227.0" />
+      <point x="283.19814814814816" y="227.0" />
+      <point x="64.80000000000004" y="38.0" />
+    </edge>
+    <edge source="ro.mta.se.lab.controller.MainViewController" target="ro.mta.se.lab.model.CityModel">
+      <point x="-74.0" y="-115.0" />
+      <point x="37.0" y="227.0" />
+      <point x="77.97962962962958" y="227.0" />
+      <point x="77.97962962962958" y="96.0" />
+      <point x="224.99999999999994" y="96.0" />
+      <point x="-48.0" y="38.0" />
+    </edge>
+    <edge source="ro.mta.se.lab.MainApp" target="ro.mta.se.lab.controller.MainViewController">
+      <point x="-34.66666666666666" y="-15.0" />
+      <point x="201.0611111111111" y="507.0" />
+      <point x="111.0" y="507.0" />
+      <point x="0.0" y="115.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.592292089249493" x="469.0" y="482.99999999999994" />
+  <SelectedNodes>
+    <node>ro.mta.se.lab.model.CountryModel</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

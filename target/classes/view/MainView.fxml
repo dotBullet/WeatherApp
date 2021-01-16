@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ChoiceBox fx:id="countries" layoutX="31.0" layoutY="46.0" prefWidth="150.0" />
+        <ChoiceBox fx:id="cities" layoutX="406.0" layoutY="46.0" prefWidth="150.0" />
+        <Text layoutX="85.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country" />
+        <Text layoutX="470.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City" />
+        <Label fx:id="cityLabel" layoutX="92.0" layoutY="115.0" text="Label" />
+        <Label fx:id="weatherLabel" layoutX="92.0" layoutY="167.0" text="Label" />
+        <Label fx:id="degreesLabel" layoutX="92.0" layoutY="194.0" text="Label" />
+        <Label fx:id="humidityLabel" layoutX="467.0" layoutY="123.0" text="Label" />
+        <Label fx:id="windLabel" layoutX="467.0" layoutY="150.0" text="Label" />
+        <Label fx:id="timeLabel" layoutX="92.0" layoutY="142.0" text="Label" />
+    </children>
+</AnchorPane>
