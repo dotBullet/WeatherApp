@@ -4,6 +4,13 @@ import ro.mta.se.lab.model.CityModel;
 
 import java.util.List;
 
+/**
+ * Clasa este utilizata pentru a salva cele
+ * doua atribuie specifice fiecarei tari. (lista de orase , codul tarii)
+ *
+ * @author Bucur Bogdan-Andrei
+ */
+
 public class CountryModel {
 
     private List<CityModel> cityList;

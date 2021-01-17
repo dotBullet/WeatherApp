@@ -9,9 +9,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Clasa aceasta citeste fisierul config.cfg
+ * si creeaza obiectele de tip Country si City.
+ *
+ * @author Bucur Bogdan-Andrei
+ */
+
 public class ReadConfigController {
 
-    private ReadConfigController() {
+    public ReadConfigController() {
     }
 
     public static List<CountryModel> readConfigFile(String path){

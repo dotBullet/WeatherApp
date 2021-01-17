@@ -5,6 +5,13 @@ public class CityModel {
     private int id;
     private String denumire;
 
+    /**
+     * Clasa este utilizata pentru a salva cele
+     * doua atribuie specifice fiecarui oras. (ID , denumire)
+     *
+     * @author Bucur Bogdan-Andrei
+     */
+
     public CityModel(int id, String denumire) {
         this.id = id;
         this.denumire = denumire;

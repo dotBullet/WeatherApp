@@ -2,14 +2,12 @@ package ro.mta.se.lab.controller;
 
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 
 import ro.mta.se.lab.model.CityModel;
 import ro.mta.se.lab.model.CountryModel;
-import ro.mta.se.lab.model.WeatherModel;
 
 import org.json.JSONObject;
 
@@ -22,6 +20,12 @@ import java.net.http.HttpResponse;
 import java.util.Calendar;
 import java.util.List;
 
+/**
+ * Aceasta clasa atribuie la fiecare camp,
+ * valorile si face afisarea view-ului.
+ *
+ * @author Bucur Bogdan-Andrei
+ */
 
 public class MainViewController {
 
@@ -49,6 +53,9 @@ public class MainViewController {
         this.countryList = countryList;
     }
 
+    public MainViewController() {
+    }
+
     @FXML
     private void initialize() {
         // Initialize the person table with the two columns.
@@ -62,6 +69,13 @@ public class MainViewController {
                 else
                     countries.getItems().add(countryModel.getCode());
             }
+
+            /**
+             * De fiecare data cand este schimbata tara,
+             * afiseaza orasele aferente tarii.
+             * Dupa schimbarea tarii, se va face clear la lista oraselor.
+             *
+             */
 
             countries.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
                 @Override
@@ -77,6 +91,11 @@ public class MainViewController {
                     }
                 }
             });
+            /**
+             * Se selecteaza orasele si se atribuie valori label-urilor.
+             *
+             */
+
             cities.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
                 @Override
                 public void changed(ObservableValue<? extends Number> observableValue, Number number, Number t1) {
@@ -104,6 +123,11 @@ public class MainViewController {
         }
     }
 
+    /**
+     * Istoricul datelor introduse.
+     * Se scrie intr-un fisier.
+     */
+
     private void writeHistory(String file , String data){
         try{
         FileWriter fileWriter = null;
@@ -115,6 +139,11 @@ public class MainViewController {
             System.out.println(e);
         }
     }
+
+    /**
+     * Aceeseaza API-ul si returneaza un obiect de tip JSON.
+     */
+
 
     public JSONObject getWeather(String city) {
         JSONObject jsonObject = null;

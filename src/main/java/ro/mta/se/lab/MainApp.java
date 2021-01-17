@@ -14,6 +14,12 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.List;
 
+/**
+ * Clasa principala al acestui proiect.
+ *
+ * @author Bucur Bogdan-Andrei
+ */
+
 public class MainApp extends Application {
 
     public static void main(String[] args )
